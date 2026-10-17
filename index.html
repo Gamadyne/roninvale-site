@@ -170,11 +170,6 @@ footer .mono{text-align:center!important}
   <header class="name">
     <h1 aria-label="Ronin Vale">Ronin <span class="v">V</span>ale</h1>
   </header>
-  <div class="sub">
-    <div class="mono">Index / The Collection</div>
-    <div class="mono mid" id="count">014 pieces</div>
-    <div class="mono end">Antiques from the future</div>
-  </div>
 
   <main class="grid" id="grid"></main>
 
@@ -249,7 +244,6 @@ footer .mono{text-align:center!important}
   ];
 
   const $=id=>document.getElementById(id);
-  $("count").textContent=String(pieces.length).padStart(3,"0")+" pieces";
 
   const g=$("grid");
   pieces.forEach((p,i)=>{
