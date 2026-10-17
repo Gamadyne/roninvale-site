@@ -158,17 +158,14 @@ footer .mono{text-align:center!important}
 
 .name{border:0;flex-direction:column;align-items:center}
 .tagline{margin:1.6vw 0 0;font-family:var(--mono);font-size:clamp(12px,1.05vw,16px);letter-spacing:.55em;padding-left:.55em;text-transform:uppercase;color:#e8e8e8;text-shadow:0 0 10px rgba(255,255,255,.3)}
+.floatsound{position:fixed;right:24px;bottom:18px;z-index:40}
+.floatsound .sound:hover{background:none;margin:0;padding:0;color:#fff;text-shadow:0 0 8px rgba(255,255,255,.6)}
+.name{padding-top:4vw}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head><body>
 
 <div class="page">
-  <div class="bar">
-    <div></div>
-    <div class="c mono">Year 3022</div>
-    <div class="r"><button class="sound" type="button" id="soundBtn" aria-pressed="false"><span class="sq" aria-hidden="true"></span><span id="soundLabel">Sound: off</span></button></div>
-  </div>
-
   <header class="name">
     <h1 aria-label="Ronin Vale">Ronin <span class="v">V</span>ale</h1>
     <p class="tagline">Luxury Jewels &amp; Restoration</p>
@@ -192,6 +189,8 @@ footer .mono{text-align:center!important}
     <div class="mono" style="text-align:right;line-height:1.9">Luxury Jewels &amp; Restoration<br>Private viewings by appointment</div>
   </footer>
 </div>
+
+<div class="floatsound"><button class="sound" type="button" id="soundBtn" aria-pressed="false"><span class="sq" aria-hidden="true"></span><span id="soundLabel">Sound: off</span></button></div>
 
 <div class="view" id="view" role="dialog" aria-modal="true" aria-labelledby="vMaker">
   <div class="vbar">
